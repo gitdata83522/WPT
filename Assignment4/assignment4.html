@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CALCULATOR</title>
+</head>
+<body>
+   <div style="width: 100%;text-align: center;margin-top: 150px;font-size: xx-large;background-color:azure;"> <u style="width: fit-content;"><u>CALCULATOR</u></div>
+   <br>
+   <br>
+   <br>
+  <table style="margin: auto;width: 200;text-align: left;">
+    <!-- for number 1 -->
+    <tr style="height: 150;font-size: larger;">
+        <td colspan="2">Enter number 1</td>
+        <td colspan="2">
+            <input type="text" name="txtOp1" id="txtOp1">
+        </td>
+    </tr>
+    <tr></tr>
+      <!-- Number 2 -->
+    <tr style="height: 150;font-size: larger;">
+        <td colspan="2">Enter number 2</td>
+        <td colspan="2">
+            <input type="text" name="txtOp2" id="txtOp2">
+        </td>
+    </tr>
+    <tr></tr>
+    <!-- for result -->
+    <tr style="height: 150;font-size: larger;">
+        <td colspan="2">Result</td>
+        <td colspan="2">
+            <input type="text" name="txtResult" id="txtResult">
+        </td>
+    </tr>
+    <tr></tr>
+    <tr></tr>
+    <tr style="height: 150;">
+        <td> <input type="button" value="Addition" onclick="calculate(1)"></td>
+        <td><input type="button" value="Substraction" onclick="calculate(2)"></td>
+        <td> <input type="button" value="Multiplication" onclick="calculate(3)"></td>
+        <td>  <input type="button" value="Division" onclick="calculate(4)"></td>
+    </tr>
+  </table>
+  <script>
+    function calculate(flag){
+        var num1 = document.getElementById("txtOp1")
+        var num2 = document.getElementById("txtOp2")
+        var res = document.getElementById("txtResult")
+
+        if(flag == 1){
+            res.value = parseInt(num1.value) + parseInt(num2.value)
+        }else if(flag == 2){
+            res.value = parseInt(num1.value) - parseInt(num2.value)
+        }else if(flag == 3){
+            res.value = parseInt(num1.value) * parseInt(num2.value)
+        }else if(flag == 4){
+            res.value = parseInt(num1.value) / parseInt(num2.value)
+        }
+    }
+  </script>
+</body>
+</html>
