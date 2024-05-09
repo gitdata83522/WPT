@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="bootstrap.min.css" rel="stylesheet"></link>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class="container" style="background-color: blanchedalmond;">
+        <center>
+            <h3>
+                <u>
+                    Profile Update
+                </u>
+            </h3>
+        </center>
+    </div>
+    <div class="jumbotron" class="table-responsive">
+        <center>
+            <table>
+                <tr>
+                    <th>
+                        First Name:
+                    </th>
+                    <td style="padding-left: 20px;">
+                        <input type="text" id="fname" required style="width: 250px;"/>
+
+                    </td>
+                </tr>
+                <tr style>
+                    <th>
+                        Last Name:
+                    </th>
+                    <td style="padding-left: 20px;">
+                        <input type="text" id="lname" required style="width: 250px;"/>
+
+                    </td>
+                </tr>
+                <tr style>
+                    <th>
+                        Email:
+                    </th>
+                    <td style="padding-left: 20px;">
+                        <input type="email" id="email" required style="width: 250px;"/>
+
+                    </td>
+                </tr>
+                <tr style>
+                    <th>
+                        Password:
+                    </th>
+                    <td style="padding-left: 20px;">
+                        <input type="password" id="password" required style="width: 250px;"/>
+
+                    </td>
+                </tr>
+                <tr style>
+                    <th>
+                        Mobile:
+                    </th>
+                    <td style="padding-left: 20px;">
+                        <input type="text" id="mobile" required style="width: 250px;"/>
+
+                    </td>
+                </tr>
+                <tr style>
+                    <th>
+                        id:
+                    </th>
+                    <td style="padding-left: 20px;">
+                        <input type="text" id="id1" required style="width: 250px;"/>
+
+                    </td>
+                </tr>
+                <tr style>
+                    <center>
+                        <td style="padding-left: 20px;" colspan="2">
+                            <button onclick="update()"  style="width: 100px;" class="btn btn-success">
+                                Update</button>
+    
+                        </td>
+                    </center>
+                    
+                </tr>
+            </table>
+        </center>
+    </div>
+    <div class="container" style="background-color: blanchedalmond;">
+        <center>
+            <h3>
+                <u>
+                    User Profile
+                </u>
+            </h3>
+        </center>
+    </div>
+    <center>
+        <table id="mytable" border="1 px solid black">
+            
+            </table>
+    </center>
+    <script src="profile_update.js">
+
+    </script>
+</body>
+</html>
